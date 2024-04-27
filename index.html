@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+    <script
+      src="https://kit.fontawesome.com/9c27b56a98.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      type="text/javascript"
+      src="https://www.gstatic.com/charts/loader.js"
+    ></script>
+    <script type="text/javascript">
+      google.charts.load("current", { packages: ["bar"] });
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ["Months", "Dining", "Clothing", "OTT subs", "Concert Events"],
+          ["Jan", 600, 200, 100, 400],
+          ["Feb", 460, 250, 150, 390],
+          ["Mar", 800, 300, 220, 120],
+          ["Apr", 540, 350, 340, 600],
+        ]);
+
+        var options = {
+          chart: {
+            title: "Non Essential Expenses",
+            subtitle: "Expenses from January-April (USD)",
+          },
+          width: 730,
+          height: 350,
+        };
+
+        var chart = new google.charts.Bar(
+          document.getElementById("columnchart_material")
+        );
+
+        chart.draw(data, google.charts.Bar.convertOptions(options));
+      }
+    </script>
+
+    <script type="text/javascript">
+      google.charts.load("current", { packages: ["bar"] });
+      google.charts.setOnLoadCallback(drawStuff);
+
+      function drawStuff() {
+        var data = new google.visualization.arrayToDataTable([
+          ["Type", "Expense (%)"],
+          ["Food/Groceries", 54],
+          ["Rent/Mortgage", 38],
+          ["Transportation expense", 35],
+          ["other", 15],
+        ]);
+
+        var options = {
+          width: 500,
+          legend: { position: "none" },
+          chart: {
+            title: "Essential Expenses (Daily)",
+            subtitle: "Expenses (%)",
+          },
+          axes: {
+            x: {
+              0: { side: "top", label: "" }, // Top x-axis.
+            },
+          },
+          bar: { groupWidth: "40%" },
+        };
+
+        var chart = new google.charts.Bar(document.getElementById("top_x_div"));
+        // Convert the Classic options to Material options.
+        chart.draw(data, google.charts.Bar.convertOptions(options));
+      }
+    </script>
+
+    <script type="text/javascript">
+      google.charts.load("current", { packages: ["line"] });
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = new google.visualization.DataTable();
+        data.addColumn("number", "Day");
+        data.addColumn("number", "Guardians");
+        data.addColumn("number", "The Avengers");
+        data.addColumn("number", "Transformers");
+
+        data.addRows([
+          [1, 37.8, 80.8, 41.8],
+          [2, 30.9, 69.5, 32.4],
+          [3, 25.4, 57, 25.7],
+          [4, 11.7, 18.8, 10.5],
+          [5, 11.9, 17.6, 10.4],
+          [6, 8.8, 13.6, 7.7],
+          [7, 7.6, 12.3, 9.6],
+          [8, 12.3, 29.2, 10.6],
+          [9, 16.9, 42.9, 14.8],
+          [10, 12.8, 30.9, 11.6],
+          [11, 5.3, 7.9, 4.7],
+          [12, 6.6, 8.4, 5.2],
+          [13, 4.8, 6.3, 3.6],
+          [14, 4.2, 6.2, 3.4],
+        ]);
+
+        var options = {
+          chart: {
+            title: "Box Office Earnings in First Two Weeks of Opening",
+            subtitle: "in millions of dollars (USD)",
+          },
+          width: 800,
+          height: 250,
+          axes: {
+            x: {
+              0: { side: "top" },
+            },
+          },
+        };
+
+        var chart = new google.charts.Line(
+          document.getElementById("line_top_x")
+        );
+
+        chart.draw(data, google.charts.Line.convertOptions(options));
+      }
+    </script>
+  </head>
+  <body>
+    <!-- <div class="header"></div> -->
+    <div class="container">
+      <div class="sidebar">
+        <div class="side-header">
+          <img
+            style="border: none; margin-left: -50%"
+            src="images/flogo.jpeg"
+            alt="logo"
+          />
+          <div class="name">
+            <p>Finexa</p>
+          </div>
+        </div>
+        <br />
+        <div class="profile">
+          <div class="img">
+            <img
+              style="
+                border: 1px solid #a9a9a9;
+                border-radius: 50%;
+                width: 70px;
+                height: 70px;
+              "
+              src="images/profile1.jpg"
+              alt="Image"
+            />
+          </div>
+          <div class="profile-name">
+            <span style="color: #3c5b6f"><p>Welcome Back,</p></span>
+            <div class="account-name">
+              <p>John Doe</p>
+            </div>
+          </div>
+          <br />
+          <br />
+        </div>
+        <div class="links">
+          <span
+            style="
+              padding: 10px;
+              word-spacing: 0.5em;
+              color: white;
+              border: 1px solid #20262e;
+              border-radius: 10px;
+            "
+          >
+            <a href="#"> Dashboard</a></span
+          >
+        </div>
+        <br />
+
+        <div class="links">
+          <span style="padding: 10px"><a href="#"> Sales</a></span>
+        </div>
+        <br />
+        <div class="links">
+          <span style="padding: 10px"><a href="#">Expense Approval</a> </span>
+        </div>
+        <br />
+        <div class="links">
+          <span style="padding: 10px"><a href="#">Finance</a></span>
+        </div>
+        <br />
+        <div class="links">
+          <span style="padding: 10px"><a href="#">Projects</a></span>
+        </div>
+        <br />
+        <hr />
+        <br />
+        <br />
+        <div class="bottom">
+          <div class="links">
+            <span style="padding: 10px"><a href="#">Settings</a></span>
+          </div>
+          <br />
+          <div class="links">
+            <span style="padding: 10px"><a href="#">Account</a></span>
+          </div>
+          <br />
+          <br />
+          <div class="links">
+            <div class="logout">
+              <span
+                style="
+                  border: 1px solid #dddddd;
+                  border-radius: 10px;
+                  background: white;
+                  padding: 10px;
+                  word-spacing: 0.5em;
+                  color: #31363f;
+                "
+              >
+                <i class="fa-solid fa-right-from-bracket"></i>
+                <a href="#">Logout</a></span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dashboard -->
+      <div class="dashboard">
+        <div class="dashboard-content">
+          <input type="text" placeholder="Search in Dashboard" />
+          <button>
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+          <div class="filters">
+            <div class="filter-text">
+              <p>Filters</p>
+            </div>
+            <div class="fil-icon">
+              <i
+                style="font-size: 11px; width: 35px"
+                class="fa-solid fa-sliders"
+              ></i>
+            </div>
+          </div>
+          <br /><br />
+          <div class="cards">
+            <div class="credit">
+              <div class="available">
+                <p>Available Balance</p>
+              </div>
+              <div class="card-type">
+                <p>Credit</p>
+              </div>
+              <div class="credit-amount">
+                <p>$12,326.80</p>
+              </div>
+              <div class="card-number">
+                <p>**** **** **** 5678</p>
+              </div>
+              <div class="expire">
+                <p>08/27</p>
+              </div>
+            </div>
+          </div>
+          <br />
+          <br />
+          <div class="type">
+            <div class="income">
+              <i
+                style="font-size: 20px; padding: 30px; margin-top: -5%"
+                class="fa-solid fa-arrow-trend-up"
+              ></i>
+              <div class="detail">
+                <div class="income-text">
+                  <p>Income</p>
+                </div>
+                <div class="income-amt">
+                  <p>$5030.78</p>
+                </div>
+              </div>
+            </div>
+            <br />
+            <div class="expense">
+              <i
+                style="font-size: 20px; padding: 30px; margin-top: -5%"
+                class="fa-solid fa-arrow-trend-down"
+              ></i>
+              <div class="expense-detail">
+                <div class="expense-text">
+                  <p>Expense</p>
+                </div>
+                <div class="expense-amt">
+                  <p>$1218.32</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br />
+          <div class="chart">
+            <div class="chart-1">
+              <div
+                id="columnchart_material"
+                style="width: 500px; height: 300px"
+              ></div>
+            </div>
+          </div>
+          <div class="chart2">
+            <div class="chart-2">
+              <div id="top_x_div" style="width: 200px; height: 400px"></div>
+            </div>
+          </div>
+          <div class="calculate">
+            <p style="margin-top: -1%">
+              Need Help,<br />Calculate your expenses?
+            </p>
+            <div class="know">
+              <p><a href="expense.html">Know More</a></p>
+            </div>
+          </div>
+          <div class="comment">
+            <p>
+              "It helps users manage their spending by tracking, categorizing,
+              and analyzing expenses."
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Components -->
+      <div class="components">
+        <div class="components-header">
+          John
+          <i class="fa-solid fa-user"></i>
+        </div>
+        <div class="subscriptions">
+          <p style="margin-top: 3%; font-size: 18px">Subscriptions</p>
+          <div class="types">
+            <a href="#"><p>Netflix</p></a>
+            <a href="#"><p>Steam</p></a>
+            <a href="#"><p>Spotify</p></a>
+            <a href="#"><p>Amazon</p></a>
+            <br />
+            <div class="sub-amount">
+              <p>$12.99</p>
+              <p>$99.80</p>
+              <p>$2.99</p>
+              <p>$20.99</p>
+            </div>
+          </div>
+        </div>
+        <div class="expenses">
+          <p>Essential Expenses</p>
+          <div class="pie"></div>
+          <br />
+          <div style="background-color: #378ce7" class="blue"></div>
+          <br />
+          <div style="background-color: #67c6e3" class="blue"></div>
+          <br />
+          <div style="background-color: #5356ff" class="blue"></div>
+          <div class="expense-name">Salary (60%)</div>
+          <br />
+          <br />
+          <div class="expense-name">Investment Dividends (30%)</div>
+          <br />
+          <br />
+          <div class="expense-name">Other (10%)</div>
+        </div>
+        <br />
+        <div class="payments">
+          <div class="schedule">
+            <p>Scheduled Payments</p>
+          </div>
+          <div class="sub-card">
+            <div class="card1">
+              <div class="monthly">
+                <p>$10.99/m</p>
+              </div>
+              <div class="sub-name">
+                <p>Netflix</p>
+              </div>
+            </div>
+            <div class="card2">
+              <div class="monthly">
+                <p>$19.99/m</p>
+              </div>
+              <div class="sub-name">
+                <p>Discord</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="savings">
+          <i
+            style="color: #41b06e; font-size: 20px"
+            class="fa-solid fa-wallet"
+          ></i>
+          <div class="total">
+            <p>TOTAL SAVINGS</p>
+          </div>
+          <div class="savings-amount">
+            <p>$19,410.62</p>
+          </div>
+          <i style="color: #c40c0c" class="fa-solid fa-caret-down"></i>
+          <div class="loss">
+            <span style="color: #c40c0c">1%</span> vs last 30 days
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

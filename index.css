@@ -1,0 +1,512 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: white;
+    font-family: "Roboto", sans-serif ;
+    width: 1000px;
+}
+
+a{
+    text-decoration: none;
+    color: black    ;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.header{
+    border: 1px solid #A9A9A9;
+    padding: 0px;
+}
+.side-header{
+    margin-top: -10%;
+}
+.name{
+    margin-left: 20%;
+    font-size: 25px;
+    padding: 20px;
+    text-align: center;
+    margin-top: -45%;
+}
+
+.profile-name
+{
+    font-size: 16px;
+    text-align: center;
+    
+}
+img{
+    width: 70px;
+    height: 70px;
+}
+.account-name
+{
+    margin-top: -8%;
+}
+
+.sidebar{
+    border: 1px solid white;
+    width: 220px;
+    padding: 30px;
+    font-size: 20px;
+    box-shadow: 0 4px 12px -2px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.links{
+    padding: 5px;
+    margin-top: 10%;
+}
+.logout{
+    margin-top: 70%;
+}
+.filters{
+    float: right;
+    border: 1px solid #DDDDDD;
+    width: 100px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 13px;
+    cursor: pointer;
+    background-color: white;
+    margin-right: 2%;
+}
+
+.filters:hover{
+    background-color: #EEEEEE;
+}
+
+.filter-text{
+    margin-right: 20%;
+    letter-spacing: 1px;
+    color: #20262E;
+    font-weight: 600;
+}
+
+.fil-icon{
+    float: right;
+    margin-top: -28.8%;
+}
+
+.credit
+{
+    border: 1px solid white;
+    box-shadow: 0 4px 12px -2px rgba(0.1, 0.1, 0.1, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    height: 145px;
+    background-color: white;
+    margin-left: 1%;
+    /* background-image: url(images/bg.png); */
+    /* color: white; */
+    cursor: pointer;
+}
+
+
+.credit-amount{
+    font-size: 30px;
+    margin-top: -3%;
+    padding: 0px;
+    margin-left: 3%;
+    font-weight: 400;
+}
+.card-type{
+    float: right;
+    margin-top: -14.5%;
+    font-size: 13px;
+    font-weight: bold;
+    color: #C7C8CC;
+}
+.available
+{
+    font-size: 13px;
+    font-weight: bold;
+    color: #C7C8CC;
+}
+
+.card-number{
+    font-size: 13px;
+    font-weight: bold;
+    color: #31363F;
+    word-spacing: 0.8em;
+    margin-top: 10%;
+}
+
+.expire{
+    font-size: 13px;
+    font-weight: bold;
+    color: #31363F;
+    word-spacing: 0.8em;
+    float: right;
+    margin-top: -13.5%;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 3fr 1fr 1fr;
+    column-gap: 5px;
+   }
+
+input{
+    border: 1px solid #DDDDDD;
+    width: 300px;
+    height: 25px;
+    padding: 8px;
+    border-radius: 10px;
+}
+button{
+    background: white;
+    height: 30px;
+    border: none;
+    transform: translateX(-40px);
+    border-radius: 10px;
+    padding: 5px;
+}
+.dashboard
+{
+    font-weight: 300;
+    padding: 20px;
+    font-size: 20px;
+    margin-left: -0.5%;
+    background: #F5F5F5 ;
+    width: 800px;
+}
+.dashboard-content{
+    border: none;
+}
+.type{
+    float: right;
+    margin-top: -29%;
+    margin-right: 2%;
+    cursor: pointer;
+}
+.chart{
+    padding: 10px;
+    margin-top: -5%;
+}
+.chart-1
+{
+    border: 1px solid white;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: white;
+    width: 715px;
+    height: 350px;
+}
+
+.income{
+    border: 1px solid white;
+    font-size: 14px;
+    background: white;
+    font-weight: 500;
+    width: 180px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px -2px rgba(0, 0, 0, 0.1);
+    color: #41B06E;
+    height: 60px;
+    margin-top: 10%;
+}
+
+.income-text{
+    margin-top: -10%;
+}
+
+.income-amt{
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: -10%;
+}
+
+.detail{
+    float: right;
+    margin-right: 20px;
+}
+
+.expense{
+    border: 1px solid white;
+    font-size: 14px;
+    background: white;
+    font-weight: 500;
+    width: 180px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px -2px rgba(0, 0, 0, 0.1);
+    color: #C40C0C;
+    height: 60px;
+}
+.expense-text{
+    margin-top: -10%;
+}
+
+.expense-amt{
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: -10%;
+}
+
+.expense-detail{
+    float: right;
+    margin-right: 20px;
+}
+
+.line-chart
+{
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.chart2{
+    padding: 10px;
+    margin-top: 0%;
+}
+
+.chart-2
+{
+    border: 1px solid white;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+    width: 500px;
+}
+
+.calculate
+{
+   border: 1px solid white;
+   background: white;
+   padding: 20px;
+   font-size: 14px;
+   font-weight: 400;
+   width: max-content;
+   border-radius: 10px;
+   height: 100px;
+   float: right;
+   margin-top: -56%;
+   margin-right: 1.5%;
+}
+
+.know{
+    margin-top: 20%;
+    border: 1px solid #C7C8CC;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.comment{
+    text-align: center;
+    border: 1px solid white;
+    padding: 20px;
+    width: 160px;
+    background: white;
+    font-size: 16px;
+    font-weight: 400;
+    color: #3D3B40;
+    margin-right: 1%;
+    border-radius: 10px;
+    float: right;
+    word-spacing: 5px;
+    margin-top: -35%;
+}
+
+
+
+/* Components */
+
+.components
+{
+    border: 1px solid #F5F5F5;
+    padding: 20px;
+    background: #F5F5F5;
+    margin-left: -2.5%;
+}
+
+.components-header{
+    float: right;
+    border: 1px solid #A9A9A9;
+    padding: 10px;
+    width: 100px;
+    border-radius: 10px;
+    word-spacing: 10px;
+    text-align: center;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.subscriptions
+{
+    border: 1px solid white;
+    background: white;
+    padding: 10px;
+    width: 300px;
+    border-radius: 10px;
+    height: 190px;
+    font-weight: 500;
+    margin-top: 20%;
+}
+
+.expenses{
+    border: 1px solid white;
+    padding: 10px;
+    background-color: white;
+    font-weight: 600;
+    font-size: 16px;
+    margin-top: 5%;
+    border-radius: 10px;
+    width: 300px;
+    height: 430px;
+}
+.pie
+{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-image: conic-gradient(
+        #5356FF 70deg,
+        #378CE7 0 235deg,
+        #67C6E3 0
+    );
+    padding: 20px;
+    margin-left: 10%;
+}
+
+.blue{
+    border: 1px solid black;
+    width: 20px;
+    height: 20px;
+    border-radius:  5px;
+}
+.expense-name{
+    float: left;
+    margin-top: -33.5%;
+    margin-left: 10%;
+}
+.sub-amount
+{
+    float: right;
+    margin-top: -58.5%;
+    margin-right: 5%;
+}
+.pie-chart{
+    float: right;
+}
+.chart-heading {
+  font-family: "Rubik", sans-serif;
+  color: #023047;
+  text-transform: uppercase;
+  font-size: 24px;
+  text-align: center;
+}
+
+.chart-container {
+  width: 200px;
+}
+
+.programming-stats {
+  font-family: "Rubik", sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin: 0 auto;
+  width: fit-content;
+  box-shadow: 0 4px 12px -2px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  padding: 8px 32px;
+  color: #023047;
+  transition: all 400ms ease;
+}
+
+.programming-stats:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 16px -7px rgba(0, 0, 0, 0.3);
+}
+
+.programming-stats .details ul {
+  list-style: none;
+  padding: 0;
+}
+
+.programming-stats .details ul li {
+  font-size: 16px;
+  margin: 12px 0;
+  text-transform: uppercase;
+}
+
+.programming-stats .details .percentage {
+  font-weight: 700;
+  color: #e63946;
+}
+
+.schedule{
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.card1{
+    border: 1px solid #EE4266;
+    background: #EE4266;
+    width: 120px;
+    padding: 10px;
+    height: 120px;
+    border-radius: 10px;
+    color: white;
+    float: right;
+    margin-right: 7%;
+}
+
+.card2{
+    border: 1px solid #41C9E2;
+    background: #41C9E2;
+    width: 120px;
+    padding: 10px;
+    height: 120px;
+    border-radius: 10px;
+    color: white;
+    float: right;
+    margin-right: 7%;
+}
+
+.monthly{
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: -5%;
+}
+
+.sub-name
+{
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 50%;
+    padding: 1px;
+}
+
+.savings{
+    margin-top: 50%;
+    border: 1px solid white;
+    padding: 20px;
+    width: 180px;
+    border-radius: 10px;
+    background-color: white;
+    font-size: 18px;
+}
+.total{
+    font-weight: 500;
+    font-size: 14px;
+    color: #3C4048;
+}
+.savings-amount{
+    font-size: 23px;
+    margin-left: 0%;
+    margin-top: -5%;
+    letter-spacing: 2px;
+}
+.loss{
+    font-size: 13px;
+    color: #3C4048;
+    float: right;
+    margin-top: 2.3%;
+    margin-right: 29%;
+}
